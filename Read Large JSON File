@@ -1,0 +1,5 @@
+with open('/Path/To/yelp_academic_dataset_user.json') as json_file:      
+    data = json_file.readlines()
+    data = list(map(json.loads, data)) 
+
+user_df = pd.DataFrame(data)
